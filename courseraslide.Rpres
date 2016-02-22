@@ -1,0 +1,33 @@
+Pitch for my Shiny App
+========================================================
+author: Nishant Sahni
+date: 2/20/2016
+
+URL for my Shiny app
+========================================================
+
+https://niceguy.shinyapps.io/courserashiny/
+
+- Explore the Motor trends data online and interactively
+- Is an automatic or manual transmission better for MPG.
+- Quantify the MPG difference between automatic and manual transmissions
+
+
+Explore the data
+========================================================
+- Analyse the data with customisable linear regression
+
+```{r}
+model <- lm(mpg~cyl,data=mtcars)
+summary(model)
+```
+
+Plot the data and see the source code
+========================================================
+
+```{r}
+hist(mtcars$mpg)
+```
+- Use Shiny controls to play with the plotting parameters
+- The source code can be found  at
+https://github.com/manisahni/courserashiny.git
